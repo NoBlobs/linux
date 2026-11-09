@@ -44,6 +44,7 @@
  * This driver supports the following PowerVR/IMG graphics cores from Imagination Technologies:
  *
  * * AXE-1-16M (33.15.11.3)
+ * * BXE-2-32 MC1 (36.29.52.182) (experimental)
  * * BXM-4-64 MC1 (36.52.104.182)
  * * BXS-4-64 MC1 (36.53.104.796)
  */
@@ -1535,5 +1536,6 @@ MODULE_DESCRIPTION(PVR_DRIVER_DESC);
 MODULE_LICENSE("Dual MIT/GPL");
 MODULE_IMPORT_NS("DMA_BUF");
 MODULE_FIRMWARE("powervr/rogue_33.15.11.3_v1.fw");
+MODULE_FIRMWARE("powervr/rogue_36.29.52.182_v1.fw");
 MODULE_FIRMWARE("powervr/rogue_36.52.104.182_v1.fw");
 MODULE_FIRMWARE("powervr/rogue_36.53.104.796_v1.fw");

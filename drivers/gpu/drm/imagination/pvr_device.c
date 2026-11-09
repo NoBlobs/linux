@@ -535,6 +535,9 @@ pvr_gpu_support_level(const struct pvr_gpu_id *gpu_id)
 	case PVR_PACKED_BVNC(36, 53, 104, 796):
 		return PVR_GPU_SUPPORTED;
 
+	case PVR_PACKED_BVNC(36, 29, 52, 182):
+		return PVR_GPU_EXPERIMENTAL;
+
 	default:
 		return PVR_GPU_UNKNOWN;
 	}

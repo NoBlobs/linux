@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config SPACEMIT_K1_APMU_PD
+	tristate "SpacemiT K1 APMU power domains"
+	depends on ARCH_SPACEMIT || COMPILE_TEST
+	depends on SPACEMIT_K1_CCU
+	default ARCH_SPACEMIT
+	help
+	  Power domain driver for the software controlled power domains
+	  (such as the GPU domain) of the SpacemiT K1 APMU.
